@@ -23,9 +23,9 @@ This example is taken from the paper "OOASP: Connecting Object-Oriented and Logi
 
 [./partial-instantiation.lp](./partial-instantiation.lp) contains a partial configuration.
 
-## CONSTRAINT AND TEST SUITE COMMANDS
+## Constraints and commands for running test cases
 
-**Minimum Cardinality Constraint**
+### 1. Minimum Cardinality Constraint
 
 Ensures that the minimum cardinality of associations between instantiated objects is maintained.
 
@@ -34,7 +34,7 @@ The Command to run the test case for this constraint is:
 clingo ooasp.lp constraints.lp test-cases/min-card/config-model.lp test-cases/min-card/partial-instantiation.lp
 ```
 
-**Maximum Cardinality Constraint** 
+### 2. Maximum Cardinality Constraint
 
 Ensures that the maximum cardinality of associations between instantiated objects is maintained.
 
@@ -43,7 +43,7 @@ The Command to run the test case for this constraint is:
 clingo ooasp.lp constraints.lp test-cases/max-card/config-model.lp test-cases/max-card/partial-instantiation.lp
 ```
 
-**Association b/w Instantiated Objects**
+### 3. Association b/w Instantiated Objects
 
 Ensures that associations only occur between instantiated objects.
 
@@ -51,7 +51,7 @@ The Command to run the test case for this constraint is:
 ```
 clingo ooasp.lp constraints.lp test-cases/assoc-bw-ins-obj/config-model.lp test-cases/assoc-bw-ins-obj/partial-instantiation.lp
 ```
-**Id is an instance of one class**
+### 4. Id is an instance of one class
 
 Ensures that an object is not an instance of two different classes.
 
@@ -59,7 +59,7 @@ The Command to run the test case for this constraint is:
 ```
 clingo ooasp.lp constraints.lp test-cases/id-instance-of-one-class/config-model.lp test-cases/id-instance-of-one-class/partial-instantiation.lp
 ```
-**Every Attribute Value must belong to an instance**
+### 5. Every Attribute Value must belong to an instance**
 
 Ensures that attribute values are associated with instantiated objects.
 
@@ -67,7 +67,7 @@ The Command to run the test case for this constraint is:
 ```
 clingo ooasp.lp constraints.lp test-cases/attr-value-to-ins/config-model.lp test-cases/attr-value-to-ins/partial-instantiation.lp
 ```
-**Integer Value Below range**
+### 6. Integer Value Below range
 
 Ensures that integer attribute values are not below the minimum inclusive value specified for them.
 
@@ -75,7 +75,7 @@ The Command to run the test case for this constraint is:
 ```
 clingo ooasp.lp constraints.lp test-cases/int-value-below-range/config-model.lp test-cases/int-value-below-range/partial-instantiation.lp
 ```
-**Integer Value Above range**
+### 7. Integer Value Above range
 
 Ensures that integer attribute values are not above the maximum inclusive value specified for them.
 
