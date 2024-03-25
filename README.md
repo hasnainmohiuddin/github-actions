@@ -1,6 +1,6 @@
 # OOASP
 
-OOASP Object Oriented Answer Set Programming
+OOASP Object-Oriented Answer Set Programming
 
 ## Getting started
 
@@ -83,3 +83,13 @@ The Command to run the test case for this constraint is:
 ```
 clingo ooasp.lp constraints.lp test-cases/int-value-above-range/config-model.lp test-cases/int-value-above-range/partial-instantiation.lp
 ```
+
+## Literature
+
+### Research Papers on OOASP
+
+OOASP: Connecting Object-Oriented and Logic Programming (2015): [Conference paper](https://doi.org/10.1007/978-3-319-23264-5_28) | [Preprint](https://arxiv.org/abs/1508.03032)
+
+### OOASP Encoding
+
+(https://github.com/siemens/OOASP)
